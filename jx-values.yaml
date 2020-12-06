@@ -1,0 +1,34 @@
+jxRequirements:
+  autoUpdate:
+    enabled: false
+    schedule: ""
+  cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
+    provider: aks
+  environments:
+  - key: dev
+    owner: mellard-org
+    repository: jx3-v3
+  ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  pipelineUser:
+    username: chris-mellard
+  repository: nexus
+  secretStorage: vault
+  vault: {}
+  webhook: lighthouse
+jxRequirementsIngressExternalDNS:
+  enabled: false
+jxRequirementsIngressTLS:
+  enabled: false
+jxRequirementsVault:
+  enabled: true
