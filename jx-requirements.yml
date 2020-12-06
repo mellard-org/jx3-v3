@@ -5,3 +5,4 @@ spec:
     provider: aks
   environments:
     - key: dev
+  secretStorage: vault
