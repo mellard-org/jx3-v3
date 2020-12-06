@@ -3,4 +3,3 @@ kind: Requirements
 spec:
   cluster:
     provider: aks
-  aks
