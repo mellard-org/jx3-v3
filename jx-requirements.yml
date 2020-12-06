@@ -6,3 +6,4 @@ spec:
   environments:
     - key: dev
   secretStorage: vault
+
