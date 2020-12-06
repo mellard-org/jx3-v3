@@ -1,6 +1,4 @@
-apiVersion: core.jenkins-x.io/v4beta1
-kind: Requirements
-spec:
+jxRequirements:
   autoUpdate:
     enabled: false
     schedule: ""
@@ -18,9 +16,19 @@ spec:
     domain: ""
     externalDNS: false
     namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
   pipelineUser:
     username: chris-mellard
   repository: nexus
   secretStorage: vault
   vault: {}
   webhook: lighthouse
+jxRequirementsIngressExternalDNS:
+  enabled: false
+jxRequirementsIngressTLS:
+  enabled: false
+jxRequirementsVault:
+  enabled: true
