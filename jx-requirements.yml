@@ -4,4 +4,4 @@ spec:
   cluster:
     provider: aks
   environments:
-    - key: potato
+    - key: dev
