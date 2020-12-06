@@ -3,3 +3,5 @@ kind: Requirements
 spec:
   cluster:
     provider: aks
+  environments:
+    - key: potato
