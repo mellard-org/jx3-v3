@@ -12,5 +12,6 @@ spec:
     domain: ""
     externalDNS: false
     namespaceSubDomain: ""
+    tls: {}
   secretStorage: vault
   vault: {}
