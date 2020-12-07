@@ -36,7 +36,7 @@ spec:
         owner: mellard-org
         repository: jx3-v3
       ingress:
-        domain: 20.193.56.105.nip.io
+        domain: ""
         externalDNS: false
         namespaceSubDomain: -jx.
         tls:

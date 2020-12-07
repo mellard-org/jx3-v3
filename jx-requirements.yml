@@ -1,11 +1,31 @@
 apiVersion: core.jenkins-x.io/v4beta1
 kind: Requirements
 spec:
+  autoUpdate:
+    enabled: false
+    schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    gitKind: github
+    gitName: github
+    gitServer: https://github.com
     provider: aks
+    registry: composedshiner.azurecr.io
   environments:
   - key: dev
+    owner: mellard-org
+    repository: jx3-v3
   ingress:
-    tls: {}
+    domain: 20.193.56.105.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  pipelineUser:
+    username: chris-mellard
+  repository: nexus
   secretStorage: vault
-
+  vault: {}
+  webhook: lighthouse
