@@ -8,6 +8,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: aks
+    registry: composedshiner.azurecr.io
   environments:
   - key: dev
     owner: mellard-org

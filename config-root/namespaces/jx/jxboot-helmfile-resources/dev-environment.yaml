@@ -30,6 +30,7 @@ spec:
         gitName: github
         gitServer: https://github.com
         provider: aks
+        registry: composedshiner.azurecr.io
       environments:
       - key: dev
         owner: mellard-org
@@ -38,6 +39,10 @@ spec:
         domain: ""
         externalDNS: false
         namespaceSubDomain: -jx.
+        tls:
+          email: ""
+          enabled: false
+          production: false
       pipelineUser:
         username: chris-mellard
       repository: nexus
